@@ -84,4 +84,4 @@ def get_excel_data(excelDir,sheetName,caseName,*args,runCase=['all']) -> list:
 
 if __name__ == '__main__':
     excelpath = os.path.join(testData_path,'test_devolop.xls')
-    get_excel_data(excelpath,'登录模块','Login','URL','标题','请求参数','响应预期结果',runCase=['1','5-6'])
+    get_excel_data(excelpath,'登录模块','Login','URL','标题','请求参数','响应预期结果',runCase=['1','5-6','all'])
