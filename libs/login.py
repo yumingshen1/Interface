@@ -23,7 +23,7 @@ class Login(BaseApi):
             return respData['data']['token']
         else:# 获得相应数据
             return respData
-        print('login函数--',resp.text)
+        # print('login函数--',resp.text)
 
     # 退出登录
     def logout(self):
@@ -31,4 +31,4 @@ class Login(BaseApi):
 
 
 if __name__ == '__main__':
-    print(Login().login(NAMEPASS,getToken=False))
+    print(Login().login(NAMEPASS,getToken=True))

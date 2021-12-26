@@ -7,6 +7,12 @@ Login:  #登录模块
     method: POST
 
 Shop:
-  list_shop:
-    path: '/shopping/myShop'
-    method: 'GET'
+  update: # 修改
+    path: /shopping/updatemyshop
+    method: POST
+  query: #查询列表
+    path: /shopping/myShop
+    method: GET
+  file_upload: #上传文件
+    path: /file
+    method: POST

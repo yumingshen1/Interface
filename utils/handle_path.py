@@ -22,7 +22,7 @@ config_path = os.path.join(project_path,'configs')
 testData_path = os.path.join(project_path,'data')
 
 # 测试报告
-report_path = os.path.join(project_path,r'outFiles/report')
-
+report_path = os.path.join(project_path,r'outFiles/report/temp')
+# print(report_path)
 # 日志路径
 log_path = os.path.join(project_path,r'outFiles/logs')
