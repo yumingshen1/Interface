@@ -23,7 +23,7 @@ def sym():
 
 
 '''
-    登录
+    登录实例
 '''
 @pytest.fixture(scope='session')
 def login_init():
