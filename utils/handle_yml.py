@@ -13,7 +13,14 @@ def get_yaml_data(fileDir):
     with open(fileDir,encoding='utf-8') as f:
         return yaml.safe_load(f.read())
 
-
+## 用例
+def get_yaml_caseData(fileDir):
+    resList = []
+    res = get_yaml_data(fileDir)
+    for i in res:
+        resList.append((i['casename'],i['data'],i['expDate']))
+    return resList
 if __name__ == '__main__':
-    res = get_yaml_data('../configs/apiConfig.yaml')
+    # res = get_yaml_data('../configs/apiConfig.yaml')
+    res = get_yaml_caseData('../data/loginCase.yaml')
     print(res)

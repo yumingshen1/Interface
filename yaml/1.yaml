@@ -1,0 +1,17 @@
+-
+  name: 回蓝
+  age: 0
+  job: TE
+-
+  name: we
+  age: 12
+  work: [100,200,300]
+  hand: {"a":101,"b":"hello"}
+  str: '{"js":"on","word":"字符串"}'
+
+---
+name: james
+age: 10
+---
+name: lili
+age: 20
