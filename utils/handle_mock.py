@@ -60,16 +60,10 @@ def test4(tive=2,timeout=30):
 
 
 
-if __name__ == '__main__':
-    # test1()
-    # test2()
-    # test3()
-    # test4()
-
-
+def test5():
     '''
         异步接口
-        
+
         target:你把哪一个函数当成子线程，直接传递函数名
         args：你传递的函数需要使用的变量 ---元组类型
     '''
@@ -85,7 +79,7 @@ if __name__ == '__main__':
     # 创建多个线程
     listThred = []
     for i in range(10):
-        listThred.append(threading.Thread(target=test4,args=()))
+        listThred.append(threading.Thread(target=test4, args=()))
     for i in listThred:
         b = i
     b.setDaemon(True)
@@ -96,4 +90,13 @@ if __name__ == '__main__':
         print(f'{one}执行其他操作')
 
     end = time.time()
-    print('整个时间：',end-start)
+    print('整个时间：', end - start)
+
+if __name__ == '__main__':
+    # test1()
+    # test2()
+    # test3()
+    # test4()
+    test5()
+
+
